@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-p%a7njmpp-*sj*-g$k!-(olb3%0(y&bk=y34g!!)e993whp6w*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sge.leonardobatista96.com.br', 'localhost', '127.0.0.1',]
 
 
 # Application definition
@@ -166,3 +166,10 @@ SIMPLE_JWT = {
 
 OPENAI_MODEL = 'gpt-3.5-turbo'
 OPENAI_API_KEY = ''
+
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://sge.leonardobatista96.com.br",
+    "localhost",
+    "127.0.0.1",
+]

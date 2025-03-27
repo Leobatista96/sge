@@ -170,6 +170,4 @@ OPENAI_API_KEY = ''
 
 CSRF_TRUSTED_ORIGINS = [
     "https://sge.leonardobatista96.com.br",
-    "localhost",
-    "127.0.0.1",
 ]
